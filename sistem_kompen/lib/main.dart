@@ -36,9 +36,7 @@ class TaskDetailScreen extends StatelessWidget {
             color: Colors.white,
             size: 27,
           ),
-          onPressed: () {
-            // Add navigation logic if needed
-          },
+          onPressed: () {},
         ),
         title: const Text(
           'TUGAS',
@@ -56,23 +54,20 @@ class TaskDetailScreen extends StatelessWidget {
               color: Colors.white,
               size: 33,
             ),
-            onPressed: () {
-              // Add account navigation logic
-            },
+            onPressed: () {},
           ),
         ],
       ),
       body: Container(
         decoration: const BoxDecoration(
           image: DecorationImage(
-            image: AssetImage(
-                'assets/background/bg-1.png'), // Background pattern if available
+            image: AssetImage('assets/background/bg-1.png'),
             fit: BoxFit.cover,
           ),
         ),
         child: Column(
           children: [
-            const SizedBox(height: 100), // Space between the AppBar and content
+            const SizedBox(height: 100),
             Expanded(
               child: Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 20.0),
@@ -82,7 +77,7 @@ class TaskDetailScreen extends StatelessWidget {
                       margin: const EdgeInsets.only(top: 80.0),
                       padding: const EdgeInsets.all(30.0),
                       decoration: BoxDecoration(
-                        color: Colors.white, // Set background color
+                        color: Colors.white,
                         borderRadius: const BorderRadius.only(
                           topLeft: Radius.circular(20.0),
                           topRight: Radius.circular(20.0),
@@ -91,7 +86,7 @@ class TaskDetailScreen extends StatelessWidget {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          const SizedBox(height: 60), // Space for the image
+                          const SizedBox(height: 60),
                           Center(
                             child: const Text(
                               'Bersihkan ruangan RT05',
@@ -124,8 +119,7 @@ class TaskDetailScreen extends StatelessWidget {
                                   style: TextStyle(
                                     fontSize: 16,
                                     fontWeight: FontWeight.w600,
-                                    color:
-                                        Colors.black, // Color for 'Poin Kompen'
+                                    color: Colors.black,
                                   ),
                                 ),
                                 TextSpan(
@@ -133,8 +127,7 @@ class TaskDetailScreen extends StatelessWidget {
                                   style: TextStyle(
                                     fontSize: 16,
                                     fontWeight: FontWeight.w600,
-                                    color:
-                                        Color(0xFF2D2766), // Color for '20 Jam'
+                                    color: Color(0xFF2D2766),
                                   ),
                                 ),
                               ],
@@ -148,17 +141,12 @@ class TaskDetailScreen extends StatelessWidget {
                                 fontWeight: FontWeight.w600,
                                 color: Color(0xFF2D2766)),
                           ),
-
-                          // Spacer untuk mendorong tombol ke bawah
                           const Spacer(),
-
-                          // Tambahkan tombol Ambil Tugas di bawah
                           Center(
                             child: ElevatedButton(
                               onPressed: () {},
                               style: ElevatedButton.styleFrom(
-                                minimumSize:
-                                    const Size(340, 59), // Ukuran tombol
+                                minimumSize: const Size(340, 59),
                                 backgroundColor: Color(0xFF8278AB),
                                 shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(15)),
@@ -175,13 +163,12 @@ class TaskDetailScreen extends StatelessWidget {
                         ],
                       ),
                     ),
-                    // Image Widget properly centered
                     Align(
                       alignment: Alignment.topCenter,
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(20.0),
                         child: Image.asset(
-                          'assets/task/task-1.jpg', // Replace with your image path
+                          'assets/task/task-1.jpg',
                           width: 181,
                           height: 143,
                           fit: BoxFit.cover,
